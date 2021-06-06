@@ -1,0 +1,27 @@
+body {
+  background-color: cornflowerblue; }
+  body header .titles {
+    color: red; }
+  body header .subtitulo {
+    color: firebrick; }
+  body main .nombres {
+    color: brown; }
+  body main .descrip {
+    font-size: 20px;
+    font-family: "Times New Roman", Times, serif;
+    display: flex;
+    justify-content: start; }
+  body main .imagenes {
+    width: 270px;
+    display: flex;
+    justify-content: end; }
+  body main .videos {
+    width: 500px;
+    height: 315px; }
+  body main .div2 {
+    display: flex; }
+  body main .centerVideo {
+    display: flex;
+    justify-content: center; }
+
+/*# sourceMappingURL=style.css.map */

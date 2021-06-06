@@ -1,0 +1,67 @@
+$colortitulos: red;
+$colorsubtitulos: firebrick;
+$colornombres: brown;
+$background: cornflowerblue;
+$fuente: 20px ;
+$fuentefamilia: "Times New Roman", Times, serif;
+$imagenes: 270px;
+
+
+@mixin flexbox {
+    display:flex;
+    justify-content:start;
+}
+@mixin imagen {
+    display: flex;
+    justify-content: end;
+    
+}
+@mixin div {
+    display: flex;
+    
+}
+body{
+    background-color:$background;
+    header{
+        .titles{
+            color: $colortitulos;
+        }
+        .subtitulo{
+            color: $colorsubtitulos;
+        }
+    }
+    main{
+        .nombres{
+            color:$colornombres;
+        }
+        .descrip{
+            font-size: $fuente ;
+            font-family: $fuentefamilia;        
+            @include flexbox()
+        }
+        .imagenes{
+            width: $imagenes;
+            @include imagen()
+            
+        }
+        .videos{
+            width: 500px;
+            height: 315px;
+                         
+        }
+        .div2{
+            @include div()
+        }
+        .centerVideo{
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+
+}
+
+    
+
+
+
