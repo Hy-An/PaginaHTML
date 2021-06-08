@@ -1,70 +1,63 @@
-$color-title:#FF0000;
-$color-subtitle:#B22222;
-$color-name:#A52A2A;
-$background:#6495ED;
-$fontbase:20px ;
-$font-family:"Times New Roman", Times, serif;
-$images:270px;
-$font-title:35px;
-$font-intro:25px;
-$font-subtitle:30px;
-$font-name:28px;
-@mixin flexbox ($justify:center) {
-    display:flex;
-    justify-content:$justify;
+$color-title: #ff0000;
+$color-subtitle: #b22222;
+$color-name: #a52a2a;
+$background: #6495ed;
+$fontbase: 20px;
+$font-family: "Times New Roman", Times, serif;
+$font-title: 35px;
+$font-intro: 25px;
+$font-subtitle: 30px;
+$font-name: 28px;
+@mixin flexbox($justify: center) {
+  display: flex;
+  justify-content: $justify;
 }
-body{
-    background-color:$background;    
-    .titles{
-        color:$color-title;
-        font-size:$font-title;
+body {
+  background-color: $background;
+  .titles {
+    color: $color-title;
+    font-size: $font-title;
+  }
+  .subtitle {
+    color: $color-subtitle;
+    font-size: $font-subtitle;
+  }
+  .intros {
+    font-size: $font-intro;
+    font-family: $font-family;
+  }
+  span {
+    display: block;
+  }
+  main {
+    span {
+      display: block;
     }
-    .subtitle{
-        color:$color-subtitle;
-        font-size:$font-subtitle ;
+    .names {
+      color: $color-name;
+      font-size: $font-name;
     }
-    .intros{
-        font-size:$font-intro;
-        font-family: $font-family;
+    .descrip {
+      font-size: $fontbase;
+      font-family: $font-family;
+      @include flexbox();
     }
-    span{
-        display: block;
+    .images {
+      width: 270px;
+      @include flexbox(flex-end);
     }
-    main{
-        span{
-            display: block;
-        }
-        .names{
-            color:$color-name;
-            font-size:$font-name;
-        }
-        .descrip{
-            font-size:$fontbase ;
-            font-family:$font-family;        
-            @include flexbox()
-        }
-        .images{
-            width: $images;
-            @include flexbox($justify:flex-end)
-            
-        }
-        .videos{
-            width:500px;
-            height:315px;                         
-        }
-        .orderdiv{
-            @include flexbox($justify:start)
-        }
-        .centerVideo{
-            @include flexbox()
-        }
-        dl{
-            padding-bottom: 50px ;
-        }
+    .videos {
+      width: 500px;
+      height: 315px;
     }
+    .orderdiv {
+      @include flexbox(start);
+    }
+    .centerVideo {
+      @include flexbox();
+    }
+    dl {
+      padding-bottom: 50px;
+    }
+  }
 }
-
-    
-
-
-
