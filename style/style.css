@@ -1,0 +1,40 @@
+body {
+  background-color: #6495ED; }
+  body .titles {
+    color: #FF0000;
+    font-size: 35px; }
+  body .subtitle {
+    color: #B22222;
+    font-size: 30px; }
+  body .intros {
+    font-size: 25px;
+    font-family: "Times New Roman", Times, serif; }
+  body span {
+    display: block; }
+  body main span {
+    display: block; }
+  body main .names {
+    color: #A52A2A;
+    font-size: 28px; }
+  body main .descrip {
+    font-size: 20px;
+    font-family: "Times New Roman", Times, serif;
+    display: flex;
+    justify-content: center; }
+  body main .images {
+    width: 270px;
+    display: flex;
+    justify-content: flex-end; }
+  body main .videos {
+    width: 500px;
+    height: 315px; }
+  body main .orderdiv {
+    display: flex;
+    justify-content: start; }
+  body main .centerVideo {
+    display: flex;
+    justify-content: center; }
+  body main dl {
+    padding-bottom: 50px; }
+
+/*# sourceMappingURL=style.css.map */
