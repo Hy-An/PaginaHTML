@@ -15,35 +15,4 @@ body {
   span {
     display: block;
   }
-  main {
-    span {
-      display: block;
-    }
-    .names {
-      color: $color-name;
-      font-size: $font-name;
-    }
-    .descrip {
-      font-size: $fontbase;
-      font-family: $font-family;
-      @include flexbox();
-    }
-    .images {
-      width: 270px;
-      @include flexbox(flex-end);
-    }
-    .videos {
-      width: 500px;
-      height: 315px;
-    }
-    .orderdiv {
-      @include flexbox(start);
-    }
-    .centerVideo {
-      @include flexbox();
-    }
-    dl {
-      padding-bottom: 50px;
-    }
-  }
 }
