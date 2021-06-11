@@ -1,0 +1,18 @@
+body {
+  background-color: $background;
+  .titles {
+    color: $color-title;
+    font-size: $font-title;
+  }
+  .subtitle {
+    color: $color-subtitle;
+    font-size: $font-subtitle;
+  }
+  .intros {
+    font-size: $font-intro;
+    font-family: $font-family;
+  }
+  span {
+    display: block;
+  }
+}
